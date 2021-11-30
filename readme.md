@@ -14,5 +14,8 @@ URL.
  - [x] En side der kan læse RSS
  - [x] Titlen og publication date
  - [x] Link til hver nyhedsitems
- - [ ] Gør RSS Url konfigurerbar
+ - [x] Gør RSS Url konfigurerbar ingen fejæ behandling
  - [ ] Sorterings af RSS feed
+
+## design 
+Lavet i Razor

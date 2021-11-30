@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace EjnerHesselRssFeed.Pages
 {
@@ -14,15 +15,25 @@ namespace EjnerHesselRssFeed.Pages
 	{
 		private readonly ILogger<IndexModel> _logger;
 		public List<CustomRSSViewModel> RSSViewModels { get; set; }
+		public string rsslink { get; set; }
 
 		public IndexModel(ILogger<IndexModel> logger)
 		{
 			_logger = logger;
 		}
 
-		public void OnGet()
+		public void OnGet(string rsslink)
 		{
-			RSSReader reader = new RSSReader();
+			
+			RSSReader reader;
+			if (!String.IsNullOrEmpty(HttpUtility.UrlDecode(rsslink)))
+			{
+				reader = new RSSReader(HttpUtility.UrlDecode(rsslink));
+			}
+			else
+			{
+				reader = new RSSReader();
+			}
 
 			RSSViewModels = reader.GetRSSFeed();
 		}

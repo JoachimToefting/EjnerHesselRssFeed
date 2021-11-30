@@ -11,7 +11,7 @@ namespace RSSUtilities.Models
 	{
 		public CustomRSSViewModel(SyndicationItem item)
 		{
-			//Kunne have brugt extension istedet/mapper
+			//Kunne have brugt extension/mapper istedet
 			Title = item.Title.Text;
 			PublicationTime = item.PublishDate.DateTime;
 			ArticleLink = item.Links.FirstOrDefault().Uri;

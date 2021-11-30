@@ -13,15 +13,19 @@ namespace RSSUtilities
 	//https://www.nuget.org/packages/System.ServiceModel.Syndication/
 	public class RSSReader
 	{
-		const string _testAddress = "https://www.dr.dk/nyheder/service/feeds/senestenyt";
+		string _address = "https://www.dr.dk/nyheder/service/feeds/senestenyt";
 		//handle string address
 		public RSSReader()
 		{
 
 		}
+		public RSSReader(string address)
+		{
+			_address = address;
+		}
 		public List<CustomRSSViewModel> GetRSSFeed()
 		{
-			using XmlReader reader = XmlReader.Create(_testAddress);
+			using XmlReader reader = XmlReader.Create(_address);
 			SyndicationFeed feed = SyndicationFeed.Load(reader);
 			List<CustomRSSViewModel> returnList = new List<CustomRSSViewModel>();
 			foreach (var item in feed.Items)
