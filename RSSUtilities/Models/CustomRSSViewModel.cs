@@ -14,8 +14,10 @@ namespace RSSUtilities.Models
 			//Kunne have brugt extension istedet/mapper
 			Title = item.Title.Text;
 			PublicationTime = item.PublishDate.DateTime;
+			ArticleLink = item.Links.FirstOrDefault().Uri;
 		}
 		public string Title { get; set; }
 		public DateTime PublicationTime { get; set; }
+		public Uri ArticleLink { get; set; }
 	}
 }

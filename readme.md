@@ -13,6 +13,6 @@ URL.
 
  - [x] En side der kan læse RSS
  - [x] Titlen og publication date
- - [ ] Link til hver nyhedsitems
+ - [x] Link til hver nyhedsitems
  - [ ] Gør RSS Url konfigurerbar
  - [ ] Sorterings af RSS feed

@@ -14,9 +14,7 @@
 		@foreach (var item in Model.RSSViewModels)
 		{
 			<tr>
-				<td>
-					@item.Title
-				</td>
+				<td><a href="@item.ArticleLink">@item.Title</a></td>
 				<td>@item.PublicationTime.ToString("dd-MM-yyyy")</td>
 			</tr>
 		}
