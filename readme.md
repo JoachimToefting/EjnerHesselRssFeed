@@ -11,8 +11,8 @@ URL.
 
 ## Krav
 
- - [ ] En side der kan læse RSS
- - [ ] Titlen og publication date
+ - [x] En side der kan læse RSS
+ - [x] Titlen og publication date
  - [ ] Link til hver nyhedsitems
  - [ ] Gør RSS Url konfigurerbar
  - [ ] Sorterings af RSS feed

@@ -1,10 +1,24 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+	ViewData["Title"] = "Home page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	<h1 class="display-4">RSS Viewer</h1>
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>PublicationDate</th>
+		</tr>
+		@foreach (var item in Model.RSSViewModels)
+		{
+			<tr>
+				<td>
+					@item.Title
+				</td>
+				<td>@item.PublicationTime.ToString("dd-MM-yyyy")</td>
+			</tr>
+		}
+	</table>
 </div>
