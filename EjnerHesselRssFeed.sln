@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutionitems", "Solutionit
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSSUtilities", "RSSUtilities\RSSUtilities.csproj", "{74BB241D-5EAA-4EAB-B165-9FF01A5C8326}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{C9EAC5A0-2E77-42C9-AA42-50D2B29538A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9EAC5A0-2E77-42C9-AA42-50D2B29538A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9EAC5A0-2E77-42C9-AA42-50D2B29538A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BB241D-5EAA-4EAB-B165-9FF01A5C8326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BB241D-5EAA-4EAB-B165-9FF01A5C8326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BB241D-5EAA-4EAB-B165-9FF01A5C8326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BB241D-5EAA-4EAB-B165-9FF01A5C8326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
